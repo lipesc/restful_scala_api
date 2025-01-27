@@ -11,6 +11,6 @@ class UserTable(tag: Tag,) extends Table[User](tag, "users") {
   def email = column[String]("email", O.Unique)
   def passwordHash = column[String]("password_hash")
 
-  def * = (id.?, username, email, passwordHash) <> (User.Tupled, User.unapply)
+  def * = (id.?, username, email, passwordHash) <> (User.tupled, User.unapply)
 }
 
