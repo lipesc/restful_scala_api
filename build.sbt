@@ -8,9 +8,9 @@ lazy val root = (project in file("."))
 
 // Dependencies
 libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play" % "2.8.20",       // Play Framework
-  "com.typesafe.slick" %% "slick" % "3.4.1",      // Slick for DB
-  "org.postgresql" % "postgresql" % "42.6.0",     // PostgreSQL driver
-  "com.pauldijou" %% "jwt-play" % "9.0.5",        // JWT for auth
-  "org.scalatest" %% "scalatest" % "3.2.17" % Test // Testing
+  "com.typesafe.play" %% "play" % "2.8.20",       
+  "com.typesafe.slick" %% "slick" % "3.4.1",      
+  "org.postgresql" % "postgresql" % "42.6.0",     
+  "com.pauldijou" %% "jwt-play" % "9.0.5",       
+  "org.scalatest" %% "scalatest" % "3.2.17" % Test 
 )
