@@ -31,3 +31,4 @@ metals.sbt
 .idea_modules
 /.worksheet/
 src/test/scala/MySuite.scala
+src/main/scala/conf/application.conf

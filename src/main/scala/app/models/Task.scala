@@ -29,3 +29,5 @@ class TaskTable(tag: Tag) extends Table[Task](tag, "tasks") {
   def * = (id.?, user_id, title, description, status, priority, due_date) <> (Task.tupled, Task.unapply)
 
 }
+
+

@@ -4,7 +4,7 @@ import java.time.LocalDateTime
 
 case class User(id: Option[Long], username: String, email: String, passwordHash: String)
 
-class UserTable(tag: Tag,) extends Table[User](tag, "users") {
+class UserTable(tag: Tag) extends Table[User](tag, "users") {
   
   def id = column[Long]("id", O.PrimaryKey, O.AutoInc)
   def username = column[String]("username", O.Unique)
